@@ -38,6 +38,17 @@ This project contains Azure Functions that interact with the Commercetools API t
    "CTP_AUTH_URL": "auth url"
    ```
    Replace the Commercetools credentials with your own.
+4. create a `local.settings.json` file in the project root with the following content:
+   ```json
+   {
+     "IsEncrypted": false,
+     "Values": {
+       "AzureWebJobsStorage": "<connection-string-to-storage>",
+       "FUNCTIONS_WORKER_RUNTIME": "node"
+     }
+   }
+   ```
+   Replace the `AzureWebJobsStorage` with the connection-string that you get using [this manual](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=node-v4%2Cpython-v2%2Cisolated-process%2Cquick-create&pivots=programming-language-javascript#configure-the-project-to-run-locally)
 
 ## Running Locally
 
