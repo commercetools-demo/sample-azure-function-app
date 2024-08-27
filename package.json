@@ -1,0 +1,20 @@
+{
+  "name": "azure-functions",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "@commercetools/platform-sdk": "^7.11.0",
+    "@commercetools/sdk-client": "^3.0.0",
+    "@commercetools/sdk-middleware-auth": "^7.0.1",
+    "@commercetools/sdk-middleware-http": "^7.0.4",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "main": "src/{index.js,functions/*.js}"
+}
